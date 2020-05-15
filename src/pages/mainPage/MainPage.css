@@ -1,0 +1,20 @@
+.home-page{
+    position: relative;
+    display:flex;
+    width:100%;
+    justify-content: flex-start;
+}
+
+.home-page BtnAdd{
+    position:absolute;
+}
+
+.note-table{
+    display:flex;
+    height:fit-content;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left:20px;
+    flex-wrap: wrap;
+    padding:10px;
+}

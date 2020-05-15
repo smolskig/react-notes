@@ -1,0 +1,41 @@
+.note{
+    background-color: #FFE996;
+    border-radius:10px;
+    width:250px;
+    max-width:250px;
+    height:fit-content;
+    margin:5px;
+
+}
+.title{
+    position: relative;
+    background-color: #FFE996;
+    padding:10px;
+    min-height:20px;
+    border-radius:5px 5px 0px 0px ;
+    font-weight: bold; 
+}
+.description{
+    height:150px;
+    max-height: 180px;
+    overflow: auto;
+    background-color: #FDF0BF;
+    padding-left: 10px;
+    padding-right:20px;
+    padding-top:5px;
+    padding-bottom:20px;
+    border-radius:0 0px 5px 5px ; 
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.64);
+}
+.closeBtn{
+    position: absolute;
+    right:15px;
+}
+.closeBtn:hover{
+    cursor:pointer
+}
