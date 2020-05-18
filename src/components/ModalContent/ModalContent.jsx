@@ -4,7 +4,7 @@ import {FaPaperPlane} from 'react-icons/fa';
 import './ModalContent.css'
 
 export default (props) => {
-    const [values,setValues]=useState(
+    const [values,setValues] = useState (
         {
             title: '',
             description: ''
