@@ -11,12 +11,6 @@ export default props =>{
             description: ''
         })
 
-    function registerTitle(e) {
-        setValues({title: e.target.value,description: values.description})
-    }
-    function registerDescription(e) {
-        setValues({title: values.title,description: e.target.value})
-    }
 
     function openNote(){
         setCustomClass('note noteOpen')
@@ -30,7 +24,7 @@ export default props =>{
         if(customClass === 'note noteOpen'){
             return (
                 <>
-                    <input type="text" className="titleField" value={values.title} onChange={registerTitle} placeholder="Insira o Título aqui" />
+                    <input type="text" className="titleField" value={values.title} onChange={(event)=> setValues({title: event.target.value,description: values.description})} placeholder="Insira o Título aqui" />
                         <span className="closeBtn" onClick={closeNote}>
                             <FaArrowLeft/>
                         </span>
@@ -51,7 +45,7 @@ export default props =>{
         if(customClass === 'note noteOpen'){
             return (
                 <div className="description"  onClick={openNote}>
-                    <textarea className="descriptionField" value={values.description} onChange={registerDescription} placeholder="O que deseja anotar ?" />
+                    <textarea className="descriptionField" value={values.description} onChange={(event)=> setValues({ title: values.title,description: event.target.value } )} placeholder="O que deseja anotar ?" />
                 </div>
             )
         }else{
